@@ -136,7 +136,7 @@ section{padding:120px 40px;scroll-margin-top:120px}
 .input-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 input,textarea{
   width:100%;padding:16px 18px;
-  border-radius:16px;border:1px solid #e5e7eb
+  border-radius:16px;border:1px solid #ffffff
 }
 button{
   margin-top:26px;width:100%;
@@ -196,3 +196,87 @@ footer{
   cursor:pointer;
   font-weight:bold;
 }
+
+/* =====================
+   MOBILE FIX (HP)
+===================== */
+@media (max-width: 600px){
+
+  /* HEADER */
+  header{
+    padding:14px 20px;
+  }
+
+  .logo{
+    height:48px;
+  }
+
+  nav{
+    display:none; /* aman, nanti bisa ganti hamburger */
+  }
+
+  /* GLOBAL */
+  section{
+    padding:100px 20px;
+  }
+
+  .container{
+    padding:0;
+  }
+
+  /* HERO */
+  .hero{
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:2rem;
+  }
+
+  .hero-text p{
+    font-size:.95rem;
+  }
+
+  .btn-primary{
+    padding:12px 28px;
+  }
+
+  /* ABOUT & GENERAL GRID */
+  .section-text h2{
+    font-size:1.9rem;
+  }
+
+  /* SERVICE */
+  .service-card{
+    padding:28px;
+  }
+
+  /* CONTACT */
+  .contact-box{
+    padding:32px 24px;
+  }
+
+  .contact-info{
+    padding:32px 24px;
+  }
+
+  /* FORM */
+  .input-grid{
+    grid-template-columns:1fr;
+  }
+
+  input, textarea{
+    padding:14px 16px;
+  }
+
+  button{
+    padding:14px;
+  }
+
+  /* POPUP */
+  .popup-content{
+    width:90%;
+    padding:24px;
+  }
+}
+
